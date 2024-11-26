@@ -38,7 +38,7 @@ public class Cart {
 		return sum;
 	}
 
-	public void printOrder() {
+	public void printCart() {
 		System.out.println("Order Items: ");
 		for (DigitalVideoDisc dvd : itemsOrdered) {
 			System.out.println("- " + dvd.getTitle() + "---Cost: " + dvd.getCost());
