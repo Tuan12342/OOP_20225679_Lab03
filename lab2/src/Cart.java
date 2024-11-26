@@ -20,6 +20,16 @@ public class Cart {
 
 	}
 
+	public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+		for (DigitalVideoDisc dvd : dvdList) {
+			this.addDigitalVideoDisc(dvd);
+		}
+	}
+	public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+		addDigitalVideoDisc(dvd1);
+		addDigitalVideoDisc(dvd2);
+	}
+
 	public float totalCost() {
 		float sum = 0.0f;
 		for (DigitalVideoDisc dvd : itemsOrdered) {
